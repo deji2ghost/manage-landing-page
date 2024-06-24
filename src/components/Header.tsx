@@ -8,11 +8,10 @@ export const Header = () => {
     const [ clicked, setClicked ] = useState(true)
 
     const handleClick = () => {
+        setClicked(!clicked)
         if(clicked){
-            setClicked(!clicked)
             document.body.style.overflowY = 'hidden'
         }else{
-            setClicked(!clicked)
             document.body.style.overflowY = 'visible'
         }
     }
@@ -21,7 +20,7 @@ export const Header = () => {
         <img src="images/logo.svg"/>
 
         <div onClick={handleClick} className={`${clicked ? 'hidden' : 'visible'} absolute left-0 -top-4 bg-opacity-20 md:hidden w-full h-screen bg-DarkBlue `}></div>
-        <ul className={`${clicked ? '-translate-y-[350px] transform-all' : 'translate-y-0 transform-all'} ease-in-out duration-300 transition-all absolute flex flex-col gap-5 text-[20px] font-semibold top-12 w-[90%] mx-auto right-0 left-0 py-7 px-4 md:p-0 text-center md:text-balance md:justify-center md:gap-[10px] text-DarkBlue md:bg-inherit md:w-full md:flex md:flex-row md:text-[16px] md:static md:font-normal lg:gap-[16px] bg-VeryLightGray`}>
+        <ul className={`${clicked ? '-translate-y-[350px] transform-all' : 'translate-y-0 transform-all'} ease-in-out duration-200 transition-all absolute flex flex-col gap-5 text-[20px] font-semibold top-12 w-[90%] mx-auto right-0 left-0 py-7 px-4 md:p-0 text-center md:text-balance md:justify-center md:gap-[10px] text-DarkBlue md:bg-inherit md:w-full md:flex md:flex-row md:text-[16px] md:static md:font-normal lg:gap-[16px] bg-VeryLightGray`}>
             {
                 nav.map(head => {
                     return(
