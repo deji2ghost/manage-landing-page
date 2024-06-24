@@ -31,7 +31,7 @@ export const Comment = () => {
                 {
                     comment.map(com => {
                         return(
-                            <div className='relative pt-16'>
+                            <div key={com.id} className='relative pt-16'>
                                 <img src={com.img} className='w-[25%] mx-auto absolute top-1 left-0 right-0 md:top-9 lg:top-1'/>
                                 <div className='bg-VeryLightGray py-16 px-5 md:mx-1 h-[250px]'>
                                     <h1 className='text-center font-bold text-xl'>{com.name}</h1>

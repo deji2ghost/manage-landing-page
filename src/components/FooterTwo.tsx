@@ -12,12 +12,12 @@ export const FooterTwo = () => {
             </Button>
         </div>
         <div className="hidden md:flex md:flex-col md:gap-20 md:items-start">
-            <img className="text-white" src="images/logo.svg" />
+            <img className="text-white md:w-[80%]" src="images/logo.svg" />
             <div className="flex justify-center gap-4 text-white">
                 {
                     fontimage.map(font=> {
                         return(
-                            <FontAwesomeIcon icon={font.name} className="md:text-[20px]"/>
+                            <FontAwesomeIcon key={font.id} icon={font.name} className="md:text-[12px] lg:text-[20px]"/>
                         )
                     })
                 }
@@ -25,7 +25,7 @@ export const FooterTwo = () => {
             <p className="text-center md:hidden">Copyright 2020. All Rights Reserved</p>
         </div>
         <div className="mt-8 md:mt-0">
-            <div className="text-white flex justify-between md:justify-normal w-[80%] md:w-full md:w- mx-auto md:gap-60 text-[15px]">
+            <div className="text-white flex justify-between md:justify-normal w-[80%] md:w-full md:w- mx-auto md:gap-10 lg:gap-24 text-[15px]">
                 <ul>
                     {
                         footernav.map(foot => {
@@ -51,7 +51,7 @@ export const FooterTwo = () => {
                 {
                     fontimage.map(font=> {
                         return(
-                            <FontAwesomeIcon icon={font.name} className="text-4xl"/>
+                            <FontAwesomeIcon key={font.id} icon={font.name} className="text-4xl"/>
                         )
                     })
                 }

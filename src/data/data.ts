@@ -18,7 +18,7 @@ export const nav = [
         name: 'Careers',
     },
     {
-        id: 4,
+        id: 5,
         name: 'Community',
     },
 ]
@@ -62,7 +62,7 @@ export const comment = [
         img: 'images/avatar-richard.png',
     },
     {
-        id: 3,
+        id: 4,
         name: 'Shanai Gough',
         paragraph: 'Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.',
         img: 'images/avatar-shanai.png',
@@ -117,11 +117,11 @@ export const fontimage = [
         name: faTwitter,
     },
     {
-        id: 1,
+        id: 4,
         name: faPinterest,
     },
     {
-        id: 1,
+        id: 5,
         name: faInstagram,
     },
 ]
